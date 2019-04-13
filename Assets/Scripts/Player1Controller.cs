@@ -30,7 +30,7 @@ public class Player1Controller : PlayerManager, TakeAHit
             if (isInLeftPosition) {
                 Vector2 myNewPosition = new Vector2(initalPosition.position.x + 1.7f, initalPosition.position.y);
                 isInLeftPosition = false;
-            } else if(!isInLeftPosition)   {
+            } else   {
                 Vector2 myNewPosition = new Vector2(initalPosition.position.x - 1.7f, initalPosition.position.y);
                 isInLeftPosition = true;
             }
