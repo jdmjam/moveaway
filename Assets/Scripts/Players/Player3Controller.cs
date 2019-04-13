@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player3Controller : MonoBehaviour,TakeAHit
+public class Player3Controller : PlayerManager
 {
     private Rigidbody2D myRigidbody2D;
     private Animator myAnimator;
@@ -15,10 +15,7 @@ public class Player3Controller : MonoBehaviour,TakeAHit
     [SerializeField] private float endingXPosition = 4.2f;
     [SerializeField] private float endinfYPosition = -4.3f;
 
-    public void TakeAHit(bool hit)
-    {
-        Destroy(gameObject);
-    }
+    
 
     private void Awake()
     {
@@ -33,14 +30,12 @@ public class Player3Controller : MonoBehaviour,TakeAHit
         if (Input.GetKeyDown(KeyCode.RightArrow) && (isInLeftPosition == true))
         {
             isInLeftPosition = false;
-            isInRightPosition = true;
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) && (isInRightPosition == true))
+        if (Input.GetKeyDown(KeyCode.RightArrow) && (isInLeftPosition == false))
         {
             isInLeftPosition = true;
-            isInRightPosition = false;
             return;
         }
     }
@@ -48,12 +43,12 @@ public class Player3Controller : MonoBehaviour,TakeAHit
     private void FixedUpdate()
     {
         //teleport
-        if ((isInRightPosition == true) && (isInLeftPosition == false))
+        if (isInLeftPosition == false)
         {
             transform.position = new Vector2(endingXPosition, endinfYPosition);
         }
 
-        if ((isInRightPosition == false) && (isInLeftPosition == true))
+        if (isInLeftPosition == true)
         {
             transform.position = new Vector2(startingXPosition, startingYPosition);
         }

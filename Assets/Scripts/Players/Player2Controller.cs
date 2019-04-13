@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2Controller : MonoBehaviour,TakeAHit
+public class Player2Controller : PlayerManager
 {
     private Rigidbody2D myRigidbody2D;
     private Animator myAnimator;
@@ -15,11 +15,7 @@ public class Player2Controller : MonoBehaviour,TakeAHit
     [SerializeField] private float endingXPosition = 0.94f;
     [SerializeField] private float endinfYPosition = -4.3f;
 
-    public void TakeAHit(bool hit)
-    {
-        Destroy(gameObject);
-    }
-
+   
     private void Awake()
     {
         myRigidbody2D = GetComponent<Rigidbody2D>();

@@ -8,7 +8,7 @@ public class Enemy1Controller : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Player1Controller>().TakeAHit();
+            other.GetComponent<PlayerManager>().TakeAHit();
 
         }
 
