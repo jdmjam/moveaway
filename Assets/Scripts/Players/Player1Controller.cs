@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Player1Controller : MonoBehaviour, TakeAHit
+public class Player1Controller : MonoBehaviour
 {
     private Rigidbody2D myRigidbody2D;
     private Animator myAnimator;
@@ -15,11 +16,14 @@ public class Player1Controller : MonoBehaviour, TakeAHit
     [SerializeField] private float endingXPosition = -2.5f;
     [SerializeField] private float endinfYPosition = -4.3f;
 
-    public void TakeAHit(bool hit)
+    public void TakeAHit()
     {
         Destroy(gameObject);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+
     }
-    
+
     private void Awake() {
         myRigidbody2D = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
