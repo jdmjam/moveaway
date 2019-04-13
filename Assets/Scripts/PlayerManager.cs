@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PlayerManager : MonoBehaviour,TakeAHit     {
+public abstract class PlayerManager : MonoBehaviour     {
     
 
-    public void TakeAHit(bool hit)    {
-        Destroy(gameObject);
-    }
+    
 
 }
