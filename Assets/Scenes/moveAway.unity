@@ -152,7 +152,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &32378473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -253,7 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b21ff0fbd24234f9f45b8815a0c98d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initalPosition: {fileID: 32378475}
+  endingXPosition: -2.5
+  endinfYPosition: -4.3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +377,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1378034061
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -477,6 +478,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e622959b90178e46bad00afc8ba0367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endingXPosition: 0.94
+  endinfYPosition: -4.3
 --- !u!1 &1578463757
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,8 +553,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578463757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.024, y: 12.04, z: 0}
-  m_LocalScale: {x: 10.496327, y: 34.90234, z: 1}
+  m_LocalPosition: {x: 0, y: 10.97, z: 0}
+  m_LocalScale: {x: 10.275905, y: 34.16939, z: 0.979}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -596,7 +599,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2140363309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -679,7 +682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140363307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: -4.3, z: 0}
+  m_LocalPosition: {x: 4.21, y: -4.3, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -697,3 +700,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b92d0e622e2354f98e6a596846f9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endingXPosition: 4.2
+  endinfYPosition: -4.3

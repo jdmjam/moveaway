@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2Controller : MonoBehaviour
+public class FastEnemie : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
